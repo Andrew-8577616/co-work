@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <%--CSS style--%>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/nicepage.css" media="screen">
+    <link rel="stylesheet" href="css/index.css" media="screen">
+    <asp:ContentPlaceHolder ID="CSS" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body class="u-body">
+
+    <form id="form1" runat="server">
+
+        <header class="u-clearfix u-header u-header" id="sec-8e38">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <%--LOGO--%>
+                <a href="https://nicepage.com" class="u-image u-logo u-image-1">
+                    <img src="images/default-logo.png" class="u-logo-image u-logo-image-1">
+                </a>
+                
+                           <%-- <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">首頁</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">資產</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">證券</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">登入</a>
+                                </li>
+                            </ul>--%>
+                <%--navbar--%>
+                <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+                    <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
+                        <a class="u-button-style u-custom-left-right-menu-spacing u-custom-padding-bottom u-custom-top-bottom-menu-spacing u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="#">
+                            <svg>
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs>
+                                    <symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;">
+                                        <rect y="1" width="16" height="2"></rect>
+                                        <rect y="7" width="16" height="2"></rect>
+                                        <rect y="13" width="16" height="2"></rect>
+                                    </symbol>
+                                </defs></svg>
+                        </a>
+                    </div>
+                    <div class="u-nav-container">
+                        <ul class="u-nav u-unstyled u-nav-1">
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Home.html" style="padding: 10px 20px;">首頁</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="About.html" style="padding: 10px 20px;">討論區</a>
+                            </li>
+                            <li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Login.html" style="padding: 10px 20px;">登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="u-nav-container-collapse">
+                        <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+                            <div class="u-sidenav-overflow">
+                                <div class="u-menu-close"></div>
+                                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2">
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html">首頁</a>
+                                    </li>
+                                    <li class="u-nav-item"><a class="u-button-style u-nav-link" href="Discuss.html">討論區</a>
+                                    </li>
+                                    <li class="u-nav-item u-"><a class="u-button-style u-nav-link" href="Login.html">登入</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+             <%-- ContentPlaceHolder2,body--%>
+            <asp:ContentPlaceHolder ID="Html" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+   <%-- ContentPlaceHolder3,JS--%>
+    <script class="u-script" type="text/javascript" src="Scripts/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="Scripts/nicepage.js" defer=""></script>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <asp:ContentPlaceHolder ID="js" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <%--footer--%>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-8cbb">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
